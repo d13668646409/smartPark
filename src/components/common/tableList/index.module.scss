@@ -1,0 +1,26 @@
+@import '@/scss/global.scss';
+
+.pagination__wrapper{
+  @include flexBoxVerticalCenter(flex-end);
+  padding: 16px 0;
+  color: $Theme__font;
+  background-color: #fff;
+  border-radius:  0 0 pxToVw(8px) pxToVw(8px);
+}
+.table_container{
+    
+  @include flexBoxVerticalFull;
+}
+.oddRow {
+  /* background: rgba(0, 0, 0, 0.1); */
+}
+
+.evenRow {
+  background: rgba(255, 0, 0, 0.05);
+}
+// .table_wrapper{
+//   // flex: 1;
+//   // background-color: #fff;
+//   // border-radius: 10px;
+//   overflow-y: auto;
+// }

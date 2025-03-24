@@ -54,6 +54,11 @@ const routes = {
             component:lazy(()=>import('../views/login'))
         },
         {
+            label:"驾驶舱",
+            key:"/cockpit",
+            component:lazy(()=>import('../views/cockpit'))
+        },
+        {
             label:"404",
             key:"/404",
             component:lazy(()=>import('../views/NotFound'))

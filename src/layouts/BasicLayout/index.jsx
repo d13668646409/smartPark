@@ -18,17 +18,17 @@ const BasicLayout = (props) => {
 
     }
     useEffect(()=>{
-        connectWebsocket(ApiConstants.HOST_NAME_WS_MESSAGE+"/"+localStorage.getItem("userId"),"",res=>{
-            if(res){
-              notification.open({
-                message: '消息通知',
-                description:res,
-                duration: 0,
-              });
-            }
-          },err=>{
-            console.log(err)
-          })
+        // connectWebsocket(ApiConstants.HOST_NAME_WS_MESSAGE+"/"+localStorage.getItem("userId"),"",res=>{
+        //     if(res){
+        //       notification.open({
+        //         message: '消息通知',
+        //         description:res,
+        //         duration: 0,
+        //       });
+        //     }
+        //   },err=>{
+        //     console.log(err)
+        //   })
     },[localStorage.getItem("userId")])
     return (
         <div id="page" className={style.page}>

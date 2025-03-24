@@ -30,7 +30,7 @@ const BasicSider = (props) => {
     useEffect(()=>{
         const arr  = getRolesRoute(route.sideNav)
         setSideNav(arr)
-       
+       console.log(arr)
     },[route])
     useEffect(()=>{
       let _defaultSelected = { ...defaultSelected }

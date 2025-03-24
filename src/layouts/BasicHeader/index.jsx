@@ -47,10 +47,13 @@ const BasicHeader = (props) => {
     const handleCancle = ()=>{
         setIsshow(false)
     }
+    const goCockpit = ()=>{
+        props.navigate('/cockpit')
+    }
     return (
         <Header>
             <div className={style.headPage}>
-                <div className={style.leftHeader}>
+                <div className={style.leftHeader} onClick={()=>goCockpit()}>
                     <img className={style.logo} src={logo} />
                     <div className={style.headTitle}>
                         App测试系统

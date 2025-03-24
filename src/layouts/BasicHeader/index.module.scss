@@ -18,6 +18,9 @@
             font-size: 20px;
             font-weight: 500
         }
+        &:hover{
+            cursor:pointer;
+        }
     }
     .rightHeader{
         @include  flexBoxVerticalCenter();
