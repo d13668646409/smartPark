@@ -1,6 +1,6 @@
 on: push
 
-premissons: 
+premissions: 
   contents: write
 
 jobs: 
