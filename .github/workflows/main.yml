@@ -1,7 +1,9 @@
-on: push
+on: 
+  push: 
+    branches: [main]
 
-permissions: 
-  contents: write
+  workflow_dispatch: 
+
 
 jobs: 
   build: 
@@ -11,7 +13,12 @@ jobs:
    steps: 
      - name: 读取仓库内容
        uses: actions/checkout@v4
-       
+
+     - name: 安装nodejs
+       uses: actions/setup-node@v2.5.1
+       with: 
+        node-version: "22.x"
+      
      - name: 安装依赖和项目打包
        run: 
          npm install
