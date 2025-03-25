@@ -2,9 +2,6 @@ on:
   push: 
     branches: [main]
 
-  workflow_dispatch: 
-
-
 jobs: 
   build: 
    name: 'build工作'
@@ -13,11 +10,11 @@ jobs:
    steps: 
      - name: 读取仓库内容
        uses: actions/checkout@v4
-
+      
      - name: 安装nodejs
-       uses: actions/setup-node@v2.5.1
+       uses: actions/setup-node@v2
        with: 
-        node-version: "22.x"
+        node-version: "22.x"  
       
      - name: 安装依赖和项目打包
        run: 
@@ -29,5 +26,6 @@ jobs:
        with: 
         branch: gh-pages
         folder: build
-        token: ${{secrets.TOKEN}}
+        clean: true
+        access_token: ${{secrets.TOKEN}}
    
