@@ -1,0 +1,12 @@
+
+@import '@/scss/mixin';
+@import '@/scss/variables';
+.side{
+  height: 100%;
+ 
+  .menu_name::-webkit-scrollbar{display: none}
+  .menu_name{
+    overflow-y: scroll;
+    height: 100%;
+  }
+  }

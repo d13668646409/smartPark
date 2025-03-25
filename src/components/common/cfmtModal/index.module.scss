@@ -1,0 +1,11 @@
+@import '@/scss/global.scss';
+
+.conent{
+    height: pxToVw(50px);
+    padding: pxToVw(12px) pxToVw(6px);
+    font-size: pxToVw(12px);
+    font-weight: 500;
+}
+.modalBtn{
+    @include flexBoxVerticalCenter()
+}

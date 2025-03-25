@@ -1,0 +1,40 @@
+@import '@/scss/global.scss';
+
+.searchFormRange{
+  @include flexBoxVerticalCenter;
+  .linkText{
+    padding: 0 6px;
+  }
+
+}
+.defaultTextStyle{
+  color: $Form__default_font;
+}
+.editTextStyle{
+  color: $Form__edit_font;
+}
+.echoTextStyle{
+  color: $Form__echo_font;
+}
+.searchIcon{
+  width: 15px;
+}
+:global{
+  .ant-cascader-menus{
+  .ant-cascader-menu{
+    max-height: 300px;
+    max-width: 200px;
+    overflow: hidden;
+    overflow-y: auto;
+    &:last-of-type(){
+      max-width: 100%;
+    }
+  }
+  }
+  .ant-input-group{
+    display: flex !important;
+    .ant-select{
+      min-width: 100px
+    }
+  }
+}
