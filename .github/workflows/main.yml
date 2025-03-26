@@ -16,7 +16,8 @@ jobs:
        with: 
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSH_SEVER_KEY }}
+        password: ${{ secrets.PASSWORD }}
+        port: 22
         script: |
           echo "ssh连接成功"
 
