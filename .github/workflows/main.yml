@@ -11,20 +11,12 @@ jobs:
      - name: 读取仓库内容
        uses: actions/checkout@v4
 
-     - name: add SSH_key
-       run: |
-        eval $(ssh-agent -s)
-        echo "${{ secrets.SSH_SEVER_KEY }}" | tr -d '\r' | ssh-add - > /dev/null
-        mkdir -p ~/.ssh
-        chmod 600 ~/.ssh
-        echo "StrictHostKeyChecking no" >> ~/.ssh/config
-
      - name: Deploy to Remote Server
        uses: appleboy/ssh-action@v1.0.3
        with: 
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSH_SEVER_KEY }}
+        password: ${{ secrets.PASSWORD }}
         port: 3389
         script: |
           echo "ssh连接成功"
