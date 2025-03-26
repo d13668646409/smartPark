@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktw_smart_park=self.webpackChunktw_smart_park||[]).push([[665],{8665:(t,e,s)=>{s.r(e),s.d(e,{default:()=>u});var n=s(5043),r=s(1880),a=s(579);class o extends n.Component{constructor(t){super(t),this.goTest=()=>{r.A.remove("token"),this.props.navigate("/login")},this.state={value:""}}componentDidMount(){}render(){return(0,a.jsx)(a.Fragment,{children:(0,a.jsx)("span",{onClick:()=>this.goTest(),children:"guanyu"})})}}const u=o}}]);
+//# sourceMappingURL=665.a1b941ac.chunk.js.map
