@@ -1,0 +1,13 @@
+@import '@/scss/mixin';
+@import '@/scss/variables';
+
+.homePage{
+    height: 100%;
+    background-color: #fff;
+    overflow:auto;
+    border-radius: 10px;
+    padding: 12px;
+}
+.container{
+    margin: pxToVw(6px) 0 0;
+  }

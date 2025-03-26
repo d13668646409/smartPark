@@ -1,0 +1,35 @@
+@import '@/scss/global.scss';
+
+.searchContainerBox{
+  @include flexBoxVerticalCenter(normal);
+  .searchForm{
+    width: 100%;
+    @include flexBoxVerticalCenter(normal);
+    flex-wrap: wrap;
+    position: relative;
+    gap: 10px;
+  }
+  .oprationBtnBottom{
+    margin-left: 950px
+    // margin-left: $Search__itemMargin_bottom*2
+  }
+  .oprationBtnPosi{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    // @extend .oprationBtnBottom;
+  }
+
+  .oprationBtn{
+    @include flexBoxVerticalCenter;
+    >div:last-child{
+      margin-right: 0
+    }
+    .confirm{
+      @extend .searchConfirm;
+    }
+    .reset{
+      @extend .searchReset;
+    }
+  }
+}

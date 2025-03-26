@@ -1,0 +1,52 @@
+@import '@/scss/mixin';
+@import '@/scss/variables';
+
+.loginPage{
+    height: 100vh;
+    background-image: url('../../asstes/images/login_bgc.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow:auto;
+    border-radius: 10px;
+    position: relative;
+    .main{
+        box-sizing: border-box;
+        width: pxToVw(350px);
+        height: pxToVw(300px);
+        background-color: #666;
+        box-shadow: 0 0 3px 5px rgba(233, 233, 233, 0.3);
+        border-radius: 5px;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: pxToVw(24px) pxToVw(12px);
+        .title{
+            margin-bottom: pxToVw(24px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                margin-right: pxToVw(6px);
+                width: pxToVw(25px);
+            }
+            span{
+                font-weight: bold;
+                font-size: 26px;
+                color: #222D4B;
+                
+            }
+            
+        }
+        .formCon{
+            width: 70%;
+            margin: auto;
+        }
+        .loginBtn{
+            width: 100%;
+            height: pxToVW(60px);
+            margin: pxToVw(24px) 0 0 0 ;
+            border-radius:8px;
+        }
+    }
+}
