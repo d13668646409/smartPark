@@ -1,8 +1,7 @@
 on: 
   push: 
     branches: [main]
-permissions:
-  contents: write
+
 jobs: 
   build: 
    name: 'build工作'
@@ -21,15 +20,11 @@ jobs:
        run: 
          npm install
          npm run build
-         
-     - name: List files in build directory
-       run: ls build  # 确保这个命令在 build 目录存在时能正确运行
 
      - name: 部署
        uses: JamesIves/github-pages-deploy-action@v4
        with: 
-        branch: gh-pages
+        branch: main
         folder: build
-        clean: true
         token: ${{secrets.TOKEN}}
    
