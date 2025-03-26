@@ -11,6 +11,9 @@ jobs:
      - name: 读取仓库内容
        uses: actions/checkout@v4
 
+     - name: add SSH
+       run: chmod 600 ~/.ssh
+
      - name: Deploy to Remote Server
        uses: appleboy/ssh-action@v1.0.3
        with: 
