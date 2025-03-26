@@ -21,13 +21,16 @@ jobs:
        run: 
          npm install
          npm run build
-
-     - name: 部署
-       uses: JamesIves/github-pages-deploy-action@v4
+         
+     - name: copy dist file with scp
+       uses: appleboy/scp-action@v0.0.1
        with: 
-        access_token: ${{secrets.TOKEN}}
-        branch: gh-pages
-        folder: build
-        clean: true
+        host: ${{secrets.HOST}}
+        username: ${{secrets.HOST}}
+        password: ${{secrets.HOST}}
+        port: 22
+        source: 'build/'
+        target: ${{secrets.TARGET}}
+
         
    
