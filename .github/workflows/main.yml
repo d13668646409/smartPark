@@ -21,9 +21,6 @@ jobs:
        run: 
          npm install
          npm run build
-         
-     - name: List files in build directory
-       run: ls build  # 确保这个命令在 build 目录存在时能正确运行
 
      - name: 部署
        uses: JamesIves/github-pages-deploy-action@v4
