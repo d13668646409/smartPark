@@ -1,8 +1,7 @@
 on: 
   push: 
     branches: [main]
-permissions:
-  contents: write
+
 jobs: 
   build: 
    name: 'build工作'
@@ -21,7 +20,7 @@ jobs:
        run: 
          npm install
          npm run build
-         
+
      - name: copy dist file with scp
        uses: appleboy/scp-action@v0.0.1
        with: 
