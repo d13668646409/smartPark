@@ -25,8 +25,9 @@ jobs:
      - name: 部署
        uses: JamesIves/github-pages-deploy-action@v4
        with: 
+        access_token: ${{secrets.TOKEN}}
         branch: gh-pages
         folder: build
         clean: true
-        token: ${{secrets.TOKEN}}
+        
    
