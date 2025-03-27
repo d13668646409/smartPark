@@ -24,7 +24,7 @@ jobs:
         port: 22
         debug: true
         script: |
-          echo "ssh 连接成功"
+          echo "ssh连接成功"
 
         
    
