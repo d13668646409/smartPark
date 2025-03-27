@@ -19,7 +19,7 @@ jobs:
         key: ${{ secrets.SSH_SEVER_KEY }}
         port: 22
         script: |
-          echo "ssh连接成功"
+          echo "ssh 连接成功"
 
         
    
